@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: monospace;
+    font-weight: 900;
+}
+
+
+/******************/
+/* REUSED STYLING */
+/******************/
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pizza {
+    height: 58em;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.chx .download,
+.spinach .download,
+.links .download {
+    align-self: flex-end;
+    transform: scale(0.5);
+    opacity: 0.2;
+    margin: 0 0 0 56em; 
+}
+
+.seasonDishes {
+    display: flex;
+    justify-content: center;
+    margin-left: 3em;
+}
+
+.seasonDishes .upArrow {
+    height: 40px;
+    width: 40px;
+    opacity: 0.3;
+    margin: 35em -10em 0 7em;
+}
+
+.seasonDishes .download {
+    height: 48px;
+    width: 48px;
+    transform: scale(0.5);
+    opacity: 0.2;
+    margin: 35.75em -5.75em 0 7.25em;
+}
+
+.mintBev, 
+.chicken,
+.drinks {
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.mintBev, 
+.chicken    {
+    height: 50em;
+    margin: -2em 0.5em 1em 0.5em;
+}
+
+
+/***************/
+/* CPK HEADER  */
+/***************/
+.header {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1; 
+}
+
+
+/* Yellow Header Bar */
+.headBar {
+    background-color: #ffdb00;
+    color: #ffffff;
+}
+
+.headBar p {
+    display: inline-block;
+    font-size: 1em;
+    padding: 6px;
+    margin: 0 auto;
+}
+    
+.headBar img {
+    width: 2.4em; 
+} 
+
+
+/* Logo with Account Links */
+.logoCPK {
+    width: 275px;
+    margin: 1.5em auto 0 auto;
+}
+
+.logoNavBar {
+    font-size: 1em;
+    margin: 0 2em 0 -22em;
+}
+
+.logoNavBar a {
+    color: #969698;
+}
+
+sup {
+    font-weight: bold;
+    padding: 0 5px 0 0;
+}
+
+
+/* User Restaurant Links */
+.navBar {
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.navBar img {
+    height: 0.65em;
+    filter: brightness(60%);
+    margin: 0 -10px 0 20px; 
+}
+
+
+/* Border between Header and Body */
+.border {
+    width: 25em;
+    margin: 3em auto -0.5em auto;
+}
+
+
+/****************/
+/* CPK PIZZAS  */
+/***************/
+/* Chicken Pizza */
+.chx {
+    display: flex;
+    background-image: url(../images/HomePage1_1920.jpg);
+    color: #ffffff;
+    margin-top: -10.5em; 
+}
+
+.pizzaBlurb {
+    display: flex;
+    align-items: center;
+    margin: 21em -60em 0 83em;
+}
+
+.pizzaBlurb img {
+    width: 2.5em;
+}
+
+.pizzaText {
+    display: inline-block;
+    font-size: 1.3em; 
+    margin-left: 0.5em;
+}
+
+.pizzaText p {
+    font-size: 1em;
+    font-weight: 550;
+}
+
+.arrow {
+    top: 39em;
+    left: 4em;
+    width: 5em;
+    background: url(../images/btn_30_sprites.png) -9em -10em;
+    background-repeat: no-repeat;
+    transform: scale(.5);
+    position: relative;
+    z-index: 1;
+}
+
+.chx .download {
+    margin-bottom: -1em;
+}
+
+
+/* REWARDS AD */
+.rewards {
+    margin: -18em 0 0 3.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.rewards img {
+    transform: scale(.5);
+}
+
+.rewardText {
+    font-size: 1.5em;
+    text-align: right;
+    margin-top: -5em;
+    margin-right: 8em;
+} 
+
+.rewardText p {
+    color: #dbc39b;
+    font-size: 1em;
+}
+
+.rewardText button {
+    background-color: #1c100b;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 550;
+    padding: 0.4em 1em;
+    margin-top: 1em;
+}
+
+
+/* Spinach Pizza */
+.spinach {
+    background-image: url(../images/HomePage2_1920.jpg); 
+    margin-top: -37em;
+    position: relative;
+    z-index: -1;
+}
+
+.spinach .download {
+    margin: 0 -50em 29em 114em;
+}
+
+
+/****************/
+/* CPK SEASONAL */
+/****************/
+/* Seasonal Header */
+.seasonalHeader {
+    font-size: 1.5em;
+    text-align: center; 
+    margin-top: 3em;
+}
+
+.seasonalHeader img {
+    transform: scale(0.75)
+}
+
+.seasonalHeader p {
+    color: #bcbcbc;
+    font-size: 0.8em;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -2em;
+    margin-right: 0.75em;
+}
+
+.links .upArrow {
+    transform: scale(.2);
+    opacity: 0.3;
+    margin: -8em -65em 1em 100em; 
+}
+
+.links .download {
+    margin-bottom: 5.75em;
+}
+
+
+/* Seasonal Drinks and Dishes */
+.mintBev {
+    width: 40em;
+    background-image: url(../images/home_seasonal_1.jpg);    
+}
+
+.chicken {
+    width: 55em;
+    background-image: url(../images/home_seasonal_2.jpg); 
+}
+
+.iced {
+    margin-bottom: 15em;
+}
+
+.iced .upArrow {
+    margin: 40em 0 0 0.5em;
+}
+
+.iced .download {
+    margin: 40.75em 0.75em 0 -2.75em;
+}
+
+.drinks {
+    height: 48em;
+    width: 96em;
+    background-image: url(../images/home_seasonal_3.jpg); 
+}
+
+
+/**************/
+/* CPK FOOTER */
+/**************/
+/* CPK Company Info. Links */
+.footWrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #faf9f9; 
+    color: #cccccc;
+    font-size: 1.5em;
+    padding: 2.5em 13em 2.5em 15em;
+}
+
+.footWrapper li {
+    display: block;
+    padding-right: 0.5em;
+}
+
+.footWrapper a {
+    color: #cccccc;
+    font-size: 0.7em;
+}
+
+.company,
+.realEstate,
+.careers,
+.FAQs,
+.quickLinks {
+    margin: 0 auto;
+}
+
+/* CPK Legal and External Links */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2a26;
+    padding: 1em 20em;
+}
+
+.line {
+    border-left: 0.1em solid #ffffff;
+    height: 2.5em;
+}
+
+.footer li {
+    padding: 0 0;
+}
+
+.footer a {
+    color: #ffffff;    
+}
+
+.group1 {
+    margin-left: 1em;
+}
+
+.textLinks,
+.apps   {
+    font-size: 0.8em;
+    margin: 0 0.75em;
+}
+
+.appleApp,
+.googlePlay {
+    width: 7em;
+}
+
+.facebook,
+.google,
+.instagram,
+.pinterest,
+.twitter {
+    display: inline-block;
+    top: 10em;
+    left: 10em; 
+    height: 4.75em;
+    background-repeat: no-repeat;   
+    transform:scale(.5);
+    margin: 0 -1em;
+}
+
+.facebook,
+.google,
+.instagram,
+.twitter {
+    width: 4.5em;
+}
+
+.facebook {    
+    background: url(../images/btn_30_sprites.png) -14em;
+    margin-left: 0.1px;
+}
+
+.google {
+    background: url(../images/btn_30_sprites.png) -18.5em;
+}
+
+.instagram {
+    background: url(../images/btn_30_sprites.png) -23em;
+}
+
+.pinterest {
+    width: 4.75em;
+    background: url(../images/btn_30_sprites.png) -27.5em;
+}
+
+.twitter {
+    background: url(../images/btn_30_sprites.png) -32.5em;
+}
+
+.foot {
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0.2;
+    position: relative;
+    z-index: 1;
+}
+
+.foot .upArrow {
+    align-self: flex-start;
+    transform: scale(0.175);
+    margin: -11em -8.5em -5em 11.5em;
+}
+
+.foot .download {
+    align-self: flex-start;
+    transform: scale(0.5);
+    margin: -4.25em 0.5em 0 -.5em;
+}
